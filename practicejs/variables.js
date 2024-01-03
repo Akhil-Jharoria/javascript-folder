@@ -40,3 +40,10 @@
 
 }
 console.log("outside the block"+userEmail);
+
+
+
+// in modern javascript recommanded to not to use the var keyword, because it has the global scope
+// so it can be accessed very easily anywhere in the program
+
+
