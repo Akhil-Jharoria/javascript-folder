@@ -45,13 +45,28 @@ const arr=[8,2,6,9,10]
 // console.log(typeof z);
 
 
-let x=39456001;
-let numStr=x.toString();
+// let x=39456001;
+// let numStr=x.toString();
 
-console.log(x);
-console.log("the numbe is",typeof x);
-console.log("The string is",typeof numStr);
-console.log(numStr);
+// console.log(x);
+// console.log("the numbe is",typeof x);
+// console.log("The string is",typeof numStr);
+// console.log(numStr);
+
+// let check=Number.isInteger(x);
+// console.log("the number is",check);
+
+
+// let check2=Number.isInteger(numStr);
+// console.log("the string is",check2);
+
+
+// let str ='45678';
+// let num=Number.parseInt(str);
+// console.log(str);
+// console.log(typeof str);
+// console.log(typeof num);
+
 
 
 
