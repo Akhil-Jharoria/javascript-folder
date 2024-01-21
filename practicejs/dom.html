@@ -1,0 +1,89 @@
+ <!-- here we are creating the test page for the javascript doms -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website DOM</title>
+</head>
+<body>
+
+     <h1 class="first-heading">Welcome to my Website for testing</h1>
+     <h2 class="second-heading">Here we create sample page</h2>
+
+     <p class="loram-para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Temporibus ad aliquam nostrum voluptas minima ipsum assumenda 
+        tempora quasi labore nulla numquam odio possimus quibusdam, modi 
+        aliquid perspiciatis minus aut molestias?
+        <span class="para-span1" >This is inside the span tag</span>
+    </p>
+
+    <p class="loram-para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsa adipisci praesentium, molestiae doloremque atque rem aperiam, nostrum 
+        cupiditate repudiandae corrupti laborum ipsum veniam quod. Fuga facilis at 
+        inventore veritatis praesentium culpa quaerat aliquam minus corrupti. Corporis 
+        tenetur doloribus tempora necessitatibus nobis maiores amet facere natus, ipsum 
+        corrupti minus? Doloribus excepturi fugiat autem architecto impedit ea quidem, iusto 
+        aperiam at nobis explicabo consequatur perspiciatis numquam libero maiores blanditiis! 
+        Nam repellat ipsam neque ipsa voluptatibus iste deserunt facilis iusto nesciunt earum 
+        assumenda laborum soluta veniam aspernatur officia, libero consequuntur beatae hic dolor.
+    <span class="para-span2" style="display: none;">This is inside the span tag</span>
+    </p>
+
+     <a href="https://www.google.com">Link to the google page</a>
+
+
+     <div class="week-item">
+        <ul class="weekname">
+            <li class="days">Monday</li>
+            <li class="days">Tuseday</li>
+            <li class="days">Wednesday</li>
+            <li class="days">Thursday</li>
+        </ul>
+    </div>
+
+    <div class="favrt-company">
+        <ol class="weekname">
+            <li class="company-name">microsoft</li>
+            <li class="company-name">Amazon</li>
+            <li class="company-name">Flipkart</li>
+            <li class="company-name">google</li>
+        </ol>
+    </div>
+
+
+    <div class="feedback">
+          <form action="dom.html" method="post">
+            <label for="name">User Name</label>
+            <input type="text" name="username" id="uname" placeholder="Enter User Name">
+            <br>
+            <label for="pass">Pass Word </label>
+            <input type="password" name="pas" id="passw" placeholder="enter password">
+            <br>
+            <input type="submit" value="Register Your Self">
+          </form>
+    </div>
+
+</body>
+
+ <script>
+    //  const body=document.querySelector('body');
+    //   console.log(body);
+
+    const para=document.querySelector('p');
+     // console.log(para.innerText);
+    //  console.log(para.innerHTML);
+     // console.log(para.style);
+   //  console.log(para);
+
+   const innerHTML=para.innerHTML;
+    console.log(innerHTML);
+
+    para.innerText=<b>innerHTML</b>;
+
+  // para.style.backgroundColor='red';
+  // para.style.color='white';
+
+ </script>
+</html>
