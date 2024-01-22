@@ -12,14 +12,14 @@
      <h1 class="first-heading">Welcome to my Website for testing</h1>
      <h2 class="second-heading">Here we create sample page</h2>
 
-     <p class="loram-para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+     <p class="loram-para1">This is para first Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Temporibus ad aliquam nostrum voluptas minima ipsum assumenda 
         tempora quasi labore nulla numquam odio possimus quibusdam, modi 
         aliquid perspiciatis minus aut molestias?
         <span class="para-span1" >This is inside the span tag</span>
     </p>
 
-    <p class="loram-para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <p class="loram-para2">This is para secondLorem ipsum dolor sit amet consectetur adipisicing elit. 
         Ipsa adipisci praesentium, molestiae doloremque atque rem aperiam, nostrum 
         cupiditate repudiandae corrupti laborum ipsum veniam quod. Fuga facilis at 
         inventore veritatis praesentium culpa quaerat aliquam minus corrupti. Corporis 
@@ -44,11 +44,11 @@
     </div>
 
     <div class="favrt-company">
-        <ol class="weekname">
-            <li class="company-name">microsoft</li>
-            <li class="company-name">Amazon</li>
-            <li class="company-name">Flipkart</li>
-            <li class="company-name">google</li>
+        <ol class="company-name">
+            <li class="name">microsoft</li>
+            <li class="name">Amazon</li>
+            <li class="name">Flipkart</li>
+            <li class="name">google</li>
         </ol>
     </div>
 
@@ -65,25 +65,66 @@
           </form>
     </div>
 
+
+    <div class="greentext"></div>
+
 </body>
 
  <script>
     //  const body=document.querySelector('body');
     //   console.log(body);
 
-    const para=document.querySelector('p');
-     // console.log(para.innerText);
-    //  console.log(para.innerHTML);
-     // console.log(para.style);
-   //  console.log(para);
+//    const para=document.querySelector('p');
+//      // console.log(para.innerText);
+//     //  console.log(para.innerHTML);
+//      // console.log(para.style);
+//    //  console.log(para);
 
-   const innerHTML=para.innerHTML;
-    console.log(innerHTML);
+//    // console.log(para);
+//    const innerHTML=para.innerHTML;
+//     console.log(innerHTML);
 
-    para.innerText=<b>innerHTML</b>;
+//     para.innerHTML=`<b>${innerHTML}</b>`;
+//    para.style.backgroundColor='red';
+//    para.style.color='white';
+   //para.remove();
 
-  // para.style.backgroundColor='red';
-  // para.style.color='white';
+//    const secondPara=document.getElementsByClassName('loram-para2');
+//   // console.log(secondPara);
+//    let str=secondPara[0].innerText;
+//    //console.log(str);
+//     let halflength=(str.length)/2;
+//     //console.log(halflength);
+//     //console.log(typeof str);
 
+//     let newstr=str.slice(0,halflength);
+//    // console.log(str);
+//    // console.log(newstr);
+
+//    const newelement=document.createElement('p');
+//    newelement.appendChild(document.createTextNode(`${newstr}`));
+//    newelement.style.color='green';
+//    console.log(newelement);
+//    document.querySelector('.greentext').appendChild(`${newelement}`)
+
+    // const div=document.querySelector('.favrt-company');
+    // console.log(div);
+    // console.log(div.children);
+    // const list=div.children[0];
+    // console.log(list);
+    // console.log(list.firstElementChild.style.color='red')
+    // console.log(list.lastElementChild.style.color='blue');
+    // console.log('list:nth-child(2)');
+
+    // const div=document.createElement('div');
+    // div.className='mydiv';
+    // div.id='myid';
+    // console.log(div);
+    // div.style.backgroundColor='green';
+    // const addtext=document.createTextNode('chai aur code');
+    // div.appendChild(addtext);
+    // console.log(div);
+    // div.
+    // document.body.appendChild(div);
  </script>
 </html>
