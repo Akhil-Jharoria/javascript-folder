@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>Learning about API</title>
+    <!-- https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js -->
+
+</head>
+<body>
+     <center><h1>Hello Guys</h1></center>
+     <p>here we are learning about api</p>
+
+     <div class="card" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary link">GITHUB Link</a>
+        </div>
+      </div>
+    
+</body>
+<script>
+    const title=document.querySelector('.card-title');
+    const text=document.querySelector('.card-text');
+    const button=document.querySelector('.link');
+    const img=document.querySelector('.card-img-top')
+
+    function displayincard(data){
+
+        title.innerHTML=data.name;
+        text.innerHTML=data.company;
+        img.setAttribute('src',`${data.avatar_url}`)
+       button.setAttribute('href',`${data.url}`)
+    }
+
+        function myfunction(res){
+
+        //console.log(typeof res);
+        const jsonformat=JSON.parse(res);
+        console.log(jsonformat);
+           displayincard(jsonformat);
+        }
+
+
+     const xhr= new XMLHttpRequest();
+
+      xhr.open('GET','https://api.github.com/users/Akhil-Jharoria');
+      xhr.send();
+
+      
+
+      xhr.onreadystatechange= function(){
+       console.log(xhr.readyState);
+       console.log(xhr.status);
+
+       if(xhr.readyState===4 && xhr.status===200){
+           const data=xhr.responseText;
+             myfunction(data)
+       }
+        
+       //  console.log(data);
+      }
+      
+ 
+
+      
+</script>
+</html>
