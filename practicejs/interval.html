@@ -1,0 +1,42 @@
+<!-- Here we are learning about the intervals events in the javaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervals Events || Chai aur code</title>
+    <style>
+        body{
+            background-color: #e26464;
+        }
+
+    </style>
+</head>
+<body>
+     
+     <center><h1>Hello Guys!</h1></center> 
+
+      <p>Here we are learning about the SetTimeOut event in javaScript</p>
+
+      <button id="stop">STOP</button>
+</body>
+<script>
+     // document.write('hello ji');
+
+      const h1=document.querySelector('h1');
+      const button=document.querySelector('#stop');
+        
+       
+       const timerevent=setTimeout(function(){
+             h1.innerHTML='How are you ji??';          
+             console.log('Set time out function is executed');
+       },4000);
+
+
+       button.addEventListener('click',(event)=>{
+            clearTimeout(timerevent);
+            console.log('cleartimeout is executed');
+       })
+</script>
+</html>
