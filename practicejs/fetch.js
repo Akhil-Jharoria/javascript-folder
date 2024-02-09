@@ -1,7 +1,7 @@
 //Here we are learning about the fetch api
 
-// const fetchRep=fetch('https://www.edamam.com/');
 
+// const fetchRep=fetch('https://www.edamam.com/');
 // fetchRep.then((response)=>{
 //   //   console.log(response);
 //      const data= response.json();
