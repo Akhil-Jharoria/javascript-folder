@@ -58,8 +58,11 @@
 <script>
     //here we write the code
 
+     function myfunction(data){
+        console.log(data[0]);
+     }
     const xhr= new XMLHttpRequest();
-    xhr.open('GET','');
+    xhr.open('GET','https://fakestoreapi.com/carts');
     xhr.send();
 
 
@@ -69,13 +72,10 @@
 
        if(xhr.readyState===4 && xhr.status===200){
            const data=xhr.responseText;
-           console.log(data);
-            // myfunction(data)
+           //console.log(data);
+           const jsonformat=JSON.parse(data);
+            myfunction(jsonformat);
        }
     }
-    
-
-     
-      
 </script>
 </html>
