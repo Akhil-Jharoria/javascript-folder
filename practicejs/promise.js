@@ -63,8 +63,10 @@ async function getAllUsers(){
         try {
             const response = await fetch('https://www.edamam.com/')
             console.log(response);
-           const data = await response.json()
-           console.log(data);
+            //console.log(typeof response);
+            console.log(response.status);
+          // const data = await response.json()
+         //  console.log(data);
         } catch (error) {
             console.log("E: ", error);
         }
