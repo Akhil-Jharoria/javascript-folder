@@ -20,6 +20,9 @@ fetchRep.then((response)=>{
 .catch((error)=>{
     console.log(error);
 })
+.finally(()=>{
+  console.log('data is printed finally');
+})
 
 // async function getdata(){
 //     try {
