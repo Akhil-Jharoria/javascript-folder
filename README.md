@@ -1,7 +1,7 @@
 # JAVASCRIPT FOLDER
 In  this folder I have learn about the Javascript from beginner to advance level.
 
-![JAVASCRIPT](/Image/js-logo.webp)
+![JAVASCRIPT](Image/js-logo.webp)
 
 ### The topics that I have learn in the Javascript course
 1. Introduction to JS
