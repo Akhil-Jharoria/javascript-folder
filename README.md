@@ -1,9 +1,11 @@
 # JAVASCRIPT FOLDER
-In  this folder I have learn about the Javascript from beginner to advance level.
+
+In this folder I have learn about the Javascript from beginner to advance level.
 
 ![JAVASCRIPT](/javascript-folder/Images/js-logo.webp)
 
 ### The topics that I have learn in the Javascript course
+
 1. Introduction to JS
 2. Variables in JS
 3. Data Type
@@ -20,8 +22,8 @@ In  this folder I have learn about the Javascript from beginner to advance level
 14. Async/await
 15. Fetch api and many more
 
-
 ### In this I have made some Projects also like-
+
 1. Background Color changer
 2. BMI calculator
 3. Digital Clock
@@ -32,9 +34,8 @@ In  this folder I have learn about the Javascript from beginner to advance level
 
 [To see that projects with source code,you can vist to this link](https://github.com/Akhil-Jharoria/javascript-folder/tree/main/projects)
 
-
 ```javascript
- console.log('hello Friend');
- console.log('Thanks for reading this file');
- console.log('BYE !');
+console.log("hello Friend");
+console.log("Thanks for reading this file");
+console.log("BYE !");
 ```
